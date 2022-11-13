@@ -1,0 +1,53 @@
+.center {
+    margin: auto;
+    width: 50%;
+    background-color: #181818;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.txt-properties{
+    padding: 20px 20px;
+    color: white;
+}
+input[type=text], input[type=password]
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+input[type=submit]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: #fcba03;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-properties, input[type=text]:focus, input[type=password]:focus
+{
+ outline: none;
+}
+
+.links
+{
+    text-decoration: none;
+    color: white;
+}
+
+.links a:hover{
+    color: #fcba03;
+}
+
+.img-center{
+  margin: auto;
+  padding: 10px;
+}

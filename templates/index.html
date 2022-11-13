@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/bootstrap.css">
+    <link rel="stylesheet" href="../static/main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="img-center">
+            <img src="{{ url_for('video') }}" class="corner" style="width: 50%; height: 50%;" ></img>           
+        </div>
+        <div>
+            <form action="" method="post">
+                <input type="text" value="" placeholder="Detection Result" disabled>
+                <input type="text" value="" placeholder="Detection Result" disabled>
+                <input type="text" value="" placeholder="Detection Result" disabled>
+                <input id="tab-switching" type="text" value="" disabled>
+            </form>
+        </div>
+    </div>
+    
+    <!-- tab switching-->
+    <script type="text/javascript">
+        document.addEventListener("visibilitychange", (event) => 
+        {
+            if (document.visibilityState == "visible") {
+                console.log("tab is active")
+                
+            } else {
+                console.log("tab is inactive")
+                document.getElementById("tab-switching").value = "The user is detected to alt tab once";
+            }
+        });
+    </script>
+
+    <script src="../static/bootstrap.js"></script>
+</body>
+</html>
